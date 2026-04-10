@@ -15,7 +15,7 @@
 
 body {
     padding-top: 20px;
-    background: #b3a078;
+    background: #b2ab7b;
 }
 
 footer {
@@ -23,5 +23,8 @@ footer {
 }
 
 .bgP {
-    background-color: #6f4e37;
+    background-color: #813f15;
+}
+.card{
+    background: #b2ab7b;
 }

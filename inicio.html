@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bgP fixed-top">
@@ -21,31 +23,79 @@
     </nav>
 
     <div id="cafeCarousel" class="carousel slide" data-bs-ride="carousel" style="margin-top: 56px;">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="https://rasgos.co/cdn/shop/files/main-image-5_92b81daf-5c8e-4d47-83cc-c914824fd0c4.jpg?v=1714167235" class="d-block w-100" alt="V60">
-                <div class="carousel-caption"><h3>Método V60</h3></div>
+        <div id="cafeCarousel" class="carousel slide" data-bs-ride="carousel" style="margin-top: 56px;">
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#cafeCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#cafeCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#cafeCarousel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#cafeCarousel" data-bs-slide-to="3"></button>
             </div>
-            <div class="carousel-item">
-                <img src="https://images.unsplash.com/photo-1545665225-b23b99e4d45e?q=80&w=1200" class="d-block w-100" alt="Prensa Francesa">
-                <div class="carousel-caption"><h3>Prensa Francesa</h3></div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="img/Image_2.png" class="d-block w-100" alt="V60">
+                    <div class="carousel-caption">
+
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="img/Image_6.png" class="d-block w-100" alt="Prensa Francesa">
+                    <div class="carousel-caption">
+
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="img/Image_9.png" class="d-block w-100" alt="Chemex">
+                    <div class="carousel-caption">
+
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=800"
+                        class="d-block w-100" alt="Nueva Foto">
+                    <div class="carousel-caption">
+
+                    </div>
+                </div>
             </div>
-            <div class="carousel-item">
-                <img src="https://terra-mano.com/products/chemex?srsltid=AfmBOoo4TY3WK67QUjEJSM-4XCrZQMBLta46DLVfsA8CYw8bL3CD2n5o" class="d-block w-100" alt="Chemex">
-                <div class="carousel-caption"><h3>Método Chemex</h3></div>
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#cafeCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#cafeCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
         </div>
+
     </div>
 
     <section class="container my-5">
         <div class="row align-items-center">
             <div class="col-md-6">
                 <h2 class="titulo-cafe">¿Qué es para ti un buen café?</h2>
-                <p>El café es como el vino: el mejor no es el más caro, sino el que más disfrutas en tu día a día. Aquí aprenderás sobre orígenes, procesos y cómo preparar la taza perfecta según tu gusto personal.</p>
-                <button class="btn btn-brown text-white">Leer más</button>
+                <p>El café es como el vino: el mejor no es el más caro, sino el que más disfrutas en tu día a día. Aquí
+                    aprenderás sobre orígenes, procesos y cómo preparar la taza perfecta según tu gusto personal.</p>
+                <button class="btn btn-brown text-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#textoExtra">
+                    Leer más
+                </button>
+            </div>
+            <div class="collapse mt-3" id="textoExtra">
+                <div class="card card-body">
+                    En Alquimia de Café creemos que el mejor café no es el más caro ni el más raro, sino el que
+                    realmente disfrutas. Creamos contenido claro, práctico y honesto para ayudarte a comprender los
+                    orígenes, métodos de preparación y calidades del café, sin tecnicismos innecesarios. Nuestro
+                    objetivo es que encuentres tu taza perfecta de forma sencilla, conectando con la esencia del café
+                    y las historias detrás de cada grano.
+                    para descubrir más sobre el fascinante mundo del café, sus variedades, métodos de preparación y cómo
+                    encontrar tu taza perfecta. Aquí no encontrarás tecnicismos innecesarios, sino información clara y
+                    honesta para que disfrutes cada sorbo.
+                </div>
             </div>
             <div class="col-md-6 mt-4 mt-md-0">
-                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=800" class="img-fluid rounded shadow" alt="Taza de cafe">
+                <img src="img/Image_5.png" class="img-fluid rounded shadow" alt="Taza de cafe">
             </div>
         </div>
     </section>
@@ -60,4 +110,5 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
