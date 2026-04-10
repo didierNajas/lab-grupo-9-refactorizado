@@ -1,0 +1,83 @@
+/* Variables de color*/
+:root {
+    --cafe-claro: #813f15;
+    --cafe-oscuro: #2c1a0e;
+    --gris-fondo: #f4f4f9;
+}
+
+body {
+    background-color: var(--gris-fondo);
+    color: var(--cafe-oscuro);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Centrado vertical y horizontal */
+.full-screen-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Contenedor */
+.main-card {
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    width: 100%;
+}
+
+/* Imagen */
+.image-section {
+    background: url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=2070&auto=format&fit=crop') center/cover no-repeat;
+    min-height: 400px; /* Asegura visibilidad */
+}
+
+/*Formulario */
+.form-section {
+    padding: 3.5rem;
+}
+
+h2 {
+    font-weight: 800;
+    color: var(--cafe-oscuro);
+}
+
+/* Estilos deinputs */
+.form-control {
+    border: 1px solid #dee2e6;
+    padding: 0.75rem;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: var(--cafe-claro);
+    box-shadow: 0 0 0 0.25rem rgba(129, 63, 21, 0.15);
+    outline: none;
+}
+
+/* Botón*/
+.btn-custom {
+    background-color: var(--cafe-claro);
+    border: none;
+    padding: 0.8rem;
+    font-weight: 600;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: var(--cafe-oscuro);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Ajustes para etiquetas pequeñas */
+.form-label {
+    letter-spacing: 0.5px;
+    margin-bottom: 0.5rem;
+}
