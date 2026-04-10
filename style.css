@@ -28,3 +28,56 @@ footer {
 .card{
     background: #b2ab7b;
 }
+
+:root {
+    --cafe-oscuro: #4b2e1e;
+    --cafe-claro: #8d6e63;
+    --crema: #fdf5e6;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fafafa;
+    color: #333;
+}
+
+.bgP {
+    background-color: var(--cafe-oscuro) !important;
+}
+
+.titulo-cafe {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: var(--cafe-oscuro);
+    font-size: 2.8rem;
+}
+
+.btn-brown {
+    background-color: var(--cafe-claro);
+    color: white;
+    border-radius: 25px;
+    transition: 0.3s;
+    border: none;
+}
+
+.btn-brown:hover {
+    background-color: var(--cafe-oscuro);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.text-brown {
+    color: var(--cafe-claro);
+}
+
+.card-hover {
+    transition: transform 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-10px);
+}
+
+.object-fit-cover {
+    object-fit: cover;
+}
